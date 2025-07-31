@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Coffee House</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fffaf3;
+            color: #333;
+        }
+        header {
+            background-color: #6e0e0a;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 8px #000;
+            font-size: 42px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .about, .outlets, .specials, .contact {
+            max-width: 1000px;
+            margin: auto;
+        }
+        .section h2 {
+            color: #6e0e0a;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        .section p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+        .specials-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .special-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .special-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .special-card h3 {
+            color: #6e0e0a;
+            font-size: 20px;
+            margin: 10px;
+        }
+        .special-card p {
+            font-size: 15px;
+            margin: 0 10px 15px;
+        }
+        .wireframe-notes {
+            background-color: #fceeee;
+            border-left: 5px solid #6e0e0a;
+            padding: 20px;
+            margin: 40px auto;
+            max-width: 900px;
+            font-size: 15px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #6e0e0a;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 60px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Indian Coffee House</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#outlets">Outlets</a>
+            <a href="#specials">Specials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        A Tradition Since 1957
+    </div>
+
+    <div id="about" class="section about">
+        <h2>About Us</h2>
+        <p>The Indian Coffee House is not just a café; it's an emotion rooted in India's post-independence culture. Managed by worker cooperatives, it stands as a symbol of self-reliance and heritage. With its vintage charm and consistent taste, we welcome generations to experience our legacy of unity and simplicity.</p>
+    </div>
+
+    <div id="outlets" class="section outlets">
+        <h2>Our Outlets</h2>
+        <p>Our outlets span across India, preserving the cultural aroma of coffee and conversations. Visit us at: Delhi, Mumbai, Chennai, Kolkata, Trivandrum, Bangalore, Bhopal, and dozens of towns in between.</p>
+    </div>
+
+    <div id="specials" class="section specials">
+        <h2>House Specials</h2>
+        <div class="specials-grid">
+            <div class="special-card">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Filter Coffee">
+                <h3>South Indian Filter Coffee</h3>
+                <p>Aromatic, strong, and served in a traditional steel tumbler – our all-time favorite.</p>
+            </div>
+            <div class="special-card">
+                <img src="https://i.pinimg.com/736x/65/ba/bf/65babfa10a37ee049e6b556f672103e5.jpg" alt="Masala Dosa">
+                <h3>Masala Dosa</h3>
+                <p>Golden crisp dosa stuffed with spicy mashed potatoes, served with chutney and sambar.</p>
+            </div>
+            <div class="special-card">
+                <img src="https://dww3ueizok6z0.cloudfront.net/food/banner/15404-aac39deae785b5178a8b976f5ae472ff24e636a6" alt="Vada Sambar">
+                <h3>Medu Vada & Sambar</h3>
+                <p>Crispy vadas soaked in flavorful sambar – a classic start to your day.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@indiancoffeehouse.com</p>
+        <p>Phone: +91 12345 67890</p>
+        <p>Address: Indian Coffee House HQ, Connaught Place, New Delhi</p>
+    </div>
+
+    
+
+    <footer>
+        &copy; 2025 Indian Coffee House. All rights reserved.
+    </footer>
+</body>
+</html>
